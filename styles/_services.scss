@@ -1,0 +1,31 @@
+.my-skills {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+}
+.skill {
+  @include flex(center, center, column);
+  padding: 2rem;
+}
+.skill h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
+}
+.icon-container {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #a09542;
+  background-color: #944f7b;
+  margin-bottom: 2rem;
+  @include flex(center, center, row);
+  transform: rotate(45deg);
+}
+.icon-container i {
+  color: #a09542;
+  font-size: 5rem;
+  margin: auto;
+  transform: rotate(-45deg);
+}
